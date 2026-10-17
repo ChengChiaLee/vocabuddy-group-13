@@ -33,3 +33,26 @@ https://colab.research.google.com/github/Okowa0814/vocabuddy-group-13/blob/main/
 3. @cheng0928 ：新增單字
 
 繳交者： @grass.cat_www
+
+---
+
+## YTP VocaBuddy 網頁版
+
+完整 React/Vite 網頁版已加入本資料夾內的 Git 儲存庫 `vocabuddy-group-13/`，原始分組作業、Python notebook 與單字 JSON 均保留。
+
+先安裝 Node.js 22.12 以上版本（或 20.19 以上的 Node.js 20），在目前資料夾執行：
+
+```bash
+npm install
+npm run dev
+```
+
+開啟終端機顯示的網址，預設為 `http://127.0.0.1:5173`。外層指令會自動轉交給內層應用程式。也可直接進入 `vocabuddy-group-13/` 執行相同指令。
+
+`npm test` 執行邏輯測試；`npm run build` 建立正式版；`npm run preview` 預覽正式版。
+
+提供四評分 SRS 間隔複習、四選一／拼字／聽力測驗、自訂匯入、搜尋、發音與新版 localStorage 進度保存。選用 AI 情境例句支援難度、用法說明、離線快取與安全的伺服器端介面；未設定服務時不會呼叫模型。
+
+`npm run serve` 可在正式建置後，以本機 Node 服務提供網站及選用 AI 端點。詳細排程演算法、舊進度遷移、金鑰設定及測試方式皆記錄於內層 README。
+
+完整使用方式、快捷鍵、資料儲存說明及選用 AI 後端介面，請見 [網頁版 README](vocabuddy-group-13/README.md)。
